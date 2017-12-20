@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/controller/controller.iml" filepath="$PROJECT_DIR$/controller/controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reserve-delievery-receive-service/reserve-delievery-receive-service.iml" filepath="$PROJECT_DIR$/reserve-delievery-receive-service/reserve-delievery-receive-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reserve-integral-receiver-service/reserve-integral-receiver-service.iml" filepath="$PROJECT_DIR$/reserve-integral-receiver-service/reserve-integral-receiver-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reserve-order-provider-service/reserve-order-provider-service.iml" filepath="$PROJECT_DIR$/reserve-order-provider-service/reserve-order-provider-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reserve-product-receive-service/reserve-product-receive-service.iml" filepath="$PROJECT_DIR$/reserve-product-receive-service/reserve-product-receive-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reservemq.iml" filepath="$PROJECT_DIR$/reservemq.iml" />
+    </modules>
+  </component>
+</project>

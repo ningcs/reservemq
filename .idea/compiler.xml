@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="controller" />
+        <module name="eureka-server" />
+        <module name="reserve-delievery-receive-service" />
+        <module name="reserve-integral-receiver-service" />
+        <module name="reserve-jifen-receiver-service" />
+        <module name="reserve-order-provider-service" />
+        <module name="reserve-product-receive-service" />
+        <module name="reserve-provider-service" />
+        <module name="reservemq" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="controller" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="reserve-delievery-receive-service" target="1.8" />
+      <module name="reserve-delivery-receive-service" target="1.8" />
+      <module name="reserve-integral-receiver-service" target="1.8" />
+      <module name="reserve-jifen-receiver-service" target="1.8" />
+      <module name="reserve-order-provider-service" target="1.8" />
+      <module name="reserve-product-receive-service" target="1.8" />
+      <module name="reserve-product-receiver--service" target="1.8" />
+      <module name="reserve-provider-service" target="1.8" />
+      <module name="reserve-receiver-service" target="1.8" />
+      <module name="reserve-wuliu-receive-service" target="1.8" />
+      <module name="reservemq" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+记录用户的购买商品的订单信息
+
+
+TimeUnit
+/**
+ * MICROSECONDS    微秒   一百万分之一秒（就是毫秒/1000）
+ MILLISECONDS    毫秒   千分之一秒
+ NANOSECONDS   毫微秒  十亿分之一秒（就是微秒/1000）
+ SECONDS          秒
+ MINUTES     分钟
+ HOURS      小时
+ DAYS      天
+ */
