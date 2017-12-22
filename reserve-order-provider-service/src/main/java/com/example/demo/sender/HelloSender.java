@@ -7,8 +7,6 @@ import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Random;
-
 /**
  * Created by ningcs on 2017/10/30.
  */
@@ -32,33 +30,21 @@ public class HelloSender {
 //    }
 
     public void send(OrderInfo orderInfo) {
-        boolean checkResult=getRandom();
-        if (checkResult){
-            logger.info(orderInfo);
-            //向库存系统发送消息
-            template.convertAndSend("queueOrder1",orderInfo);
+
+        logger.info(orderInfo);
+        //向库存系统发送消息
+        template.convertAndSend("reserve", "product.reserve.event", orderInfo);
+//            template.convertAndSend("queueOrder1",orderInfo);
             //向物流系统发送消息
-            template.convertAndSend("queueWuLiu1",orderInfo);
+//            template.convertAndSend("queueWuLiu1",orderInfo);
+        template.convertAndSend("delievery", "product.delievery.event", orderInfo);
             //向积分系统发送消息
-            template.convertAndSend("queuejifen1",orderInfo);
-        }else {
-            logger.info(orderInfo);
-            //向库存系统发送消息
-            template.convertAndSend("queueOrder2",orderInfo);
-            //向物流系统发送消息
-            template.convertAndSend("queueWuLiu2",orderInfo);
-            //向积分系统发送消息
-            template.convertAndSend("queuejifen2",orderInfo);
-        }
+//            template.convertAndSend("queuejifen1",orderInfo);
+        template.convertAndSend("integral", "product.integral.event", orderInfo);
+
+
+
 
     }
-    private boolean getRandom(){
-        Random random = new Random();
-        Integer result =random.nextInt(10000);
-        boolean checkResult =false;
-        if (result%2==0){
-            checkResult=true;
-        }
-        return checkResult;
-    }
+
 }

@@ -10,9 +10,9 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableFeignClients
 @EnableEurekaClient
 
-public class ReserveProviderServiceApplication {
+public class OrderProviderServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReserveProviderServiceApplication.class, args);
+		SpringApplication.run(OrderProviderServiceApplication.class, args);
 	}
 }

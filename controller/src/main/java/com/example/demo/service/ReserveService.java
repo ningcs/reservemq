@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * Created by ningcs on 2017/11/8.
  */
-@FeignClient(value = "spirng-boot-rabbitmq-receiver")
+@FeignClient(value = "reserve-product-receive-service")
 public interface ReserveService {
     // 获取文件
     @RequestMapping(value = "/product/getReserveCount",method = RequestMethod.POST)

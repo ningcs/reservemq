@@ -26,13 +26,13 @@ public class HelloReceive {
         }
     }
 
-    @RabbitListener(queues="queuejifen2")    //监听器监听指定的Queue
-    public void queueOrder2(OrderInfo orderInfo) {
-        Integer count=0;
-        if (orderInfo!=null){
-            log.info("Receive:队列：queuejifen2 商品名字："+orderInfo.getProductName()+",商品购买数量："+orderInfo.getBuyCount());
-            integralService.addIntegral(orderInfo);
-        }
-    }
+//    @RabbitListener(queues="queuejifen2")    //监听器监听指定的Queue
+//    public void queueOrder2(OrderInfo orderInfo) {
+//        Integer count=0;
+//        if (orderInfo!=null){
+//            log.info("Receive:队列：queuejifen2 商品名字："+orderInfo.getProductName()+",商品购买数量："+orderInfo.getBuyCount());
+//            integralService.addIntegral(orderInfo);
+//        }
+//    }
 
 }
